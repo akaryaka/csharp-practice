@@ -1,0 +1,14 @@
+/home/andrew/work/csharp-practice/enums/bin/Debug/net10.0/csharp-practice
+/home/andrew/work/csharp-practice/enums/bin/Debug/net10.0/csharp-practice.deps.json
+/home/andrew/work/csharp-practice/enums/bin/Debug/net10.0/csharp-practice.runtimeconfig.json
+/home/andrew/work/csharp-practice/enums/bin/Debug/net10.0/csharp-practice.dll
+/home/andrew/work/csharp-practice/enums/bin/Debug/net10.0/csharp-practice.pdb
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.GeneratedMSBuildEditorConfig.editorconfig
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.AssemblyInfoInputs.cache
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.AssemblyInfo.cs
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.csproj.CoreCompileInputs.cache
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.dll
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/refint/csharp-practice.dll
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.pdb
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/csharp-practice.genruntimeconfig.cache
+/home/andrew/work/csharp-practice/enums/obj/Debug/net10.0/ref/csharp-practice.dll
