@@ -1,8 +1,7 @@
-- wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
-- url -L https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
-- chmod +x ./dotnet-install.sh
-- ./dotnet-install.sh --version latest
-- export DOTNET_ROOT=$HOME/.dotnet
-- export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
-- устанавливаем C# dev
-- dotnet new console
+```cmd
+sudo dnf install dotnet-sdk-9.0
+```
+
+```cmd
+dotnet new console
+```
