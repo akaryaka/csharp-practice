@@ -5,9 +5,163 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Калькулятор" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Калькулятор" Height="500" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="1" FontSize="16" Background="Aqua" Width="50" Height="50" HorizontalAlignment="Left" RenderTransformOrigin="-0.781,-1.567" Margin="31,10,0,424" Grid.Column="1" Grid.Row="1"/>
-        <Button Content="1" FontSize="16" Background="Aqua" Width="50" Height="50" HorizontalAlignment="Left" RenderTransformOrigin="-0.781,-1.567" Margin="31,102,0,332"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <!-- 4 равных столбца для кнопок -->
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Display" 
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="4"
+                   Text="0"
+                   FontSize="48"
+                   FontWeight="Light"
+                   Foreground="White"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Margin="10,20,10,20"
+                   TextWrapping="Wrap"/>
+        <!-- Кнопка 1: Строка 1, Столбец 0 -->
+         <!-- Кнопка очистки (C) -->
+        <Button Content="C" 
+                Grid.Row="1" 
+                Grid.Column="0"
+               Margin="5"  />
+
+        <!-- Кнопка смены знака (±) -->
+        <Button Content="±" 
+                Grid.Row="1" 
+                Grid.Column="1"
+                Margin="5"  />
+        
+        <!-- Кнопка процента (%) -->
+        <Button Content="%" 
+                Grid.Row="1" 
+                Grid.Column="2"
+               Margin="5"  />
+        
+        <!-- Кнопка деления (÷) -->
+        <Button Content="÷" 
+                Grid.Row="1" 
+                Grid.Column="3"
+                Margin="5" />
+        
+        <!-- 
+        ВТОРАЯ СТРОКА КНОПОК:
+        Кнопки: 7, 8, 9, ×
+        -->
+        
+        <Button Content="7" 
+                Grid.Row="2" 
+                Grid.Column="0"
+                Margin="5" />
+        
+        <Button Content="8" 
+                Grid.Row="2" 
+                Grid.Column="1"
+               Margin="5" />
+        
+        <Button Content="9" 
+                Grid.Row="2" 
+                Grid.Column="2"
+              Margin="5" />
+        
+        <!-- Кнопка умножения (×) -->
+        <Button Content="×" 
+                Grid.Row="2" 
+                Grid.Column="3"
+               Margin="5" />
+        
+        <!-- 
+        ТРЕТЬЯ СТРОКА КНОПОК:
+        Кнопки: 4, 5, 6, −
+        -->
+        
+        <Button Content="4" 
+                Grid.Row="3" 
+                Grid.Column="0"
+                Margin="5" />
+        
+        <Button Content="5" 
+                Grid.Row="3" 
+                Grid.Column="1"
+                Margin="5" />
+        
+        <Button Content="6" 
+                Grid.Row="3" 
+                Grid.Column="2"
+                 Margin="5" />
+        
+        <!-- Кнопка вычитания (−) -->
+        <Button Content="−" 
+                Grid.Row="3" 
+                Grid.Column="3"
+                Margin="5" />
+        
+        <!-- 
+        ЧЕТВЕРТАЯ СТРОКА КНОПОК:
+        Кнопки: 1, 2, 3, +
+        -->
+        
+        <Button Content="1" 
+                Grid.Row="4" 
+                Grid.Column="0"
+                Margin="5" />
+        
+        <Button Content="2" 
+                Grid.Row="4" 
+                Grid.Column="1"
+                Margin="5" />
+        
+        <Button Content="3" 
+                Grid.Row="4" 
+                Grid.Column="2"
+                Margin="5" />
+        
+        <!-- Кнопка сложения (+) -->
+        <Button Content="+" 
+                Grid.Row="4" 
+                Grid.Column="3"
+                Margin="5" />
+        
+        <!-- 
+        ПЯТАЯ СТРОКА КНОПОК:
+        Кнопки: 0 (занимает 2 столбца), ., =
+        -->
+        
+        <!-- Кнопка 0 занимает 2 столбца благодаря Grid.ColumnSpan="2" -->
+        <Button Content="0" 
+                Grid.Row="5" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+               Margin="5" />
+        
+        <!-- Кнопка десятичной точки (.) -->
+        <Button Content="." 
+                Grid.Row="5" 
+                Grid.Column="2"
+                Margin="5" />
+        
+        <!-- Кнопка равно (=) -->
+        <Button Content="=" 
+                Grid.Row="5" 
+                Grid.Column="3"
+               Margin="5" />
+
+        <!-- Margin="3" делает небольшой красивый зазор между кнопками -->
+
     </Grid>
 </Window>
