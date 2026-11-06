@@ -20,7 +20,7 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
-            // прогоняем циклом по всем элементам внутри MainRoot, т.е. <Grid>
+            // проходим циклом по всем элементам внутри MainRoot, т.е. <Grid>
             foreach (UIElement el in MainRoot.Children)
             {
                 // делаем проверку на кнопку
@@ -36,12 +36,15 @@ namespace WpfApp2
         {
             // получаем надпись с кнопки
             string str = (string)((Button)e.OriginalSource).Content;
-
+            // если кликаем по кнопке C - очищаем поле вывода чисел
             if (str == "C")
             {
                 output.Text = "";
             } else if (str == "=")
             {
+                // чтобы использовать DataTable необходимо импортировать его
+                // используя using System.Data;
+                // метод Compute берет строку вида 5+5 с любым мат. действием и возвращает результат
                 string value = new DataTable().Compute(output.Text, null).ToString();
                 output.Text = value;
             }
